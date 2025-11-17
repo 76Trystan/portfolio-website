@@ -17,17 +17,16 @@ This is a personal portfolio website. It showcases projects, skills, and contact
 
 ## Folder Structure
 
-src/
-components/
-Navbar.js
-Hero.js
-About.js
-Projects.js
-Contact.js
-Footer.js
-App.js
-App.css
-index.js
-public/
-index.html
-package.json
+my-project/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   ├── Header.js
+│   │   └── Footer.js
+│   ├── App.js
+│   ├── index.js
+│   └── index.css
+├── package.json
+└── README.md
