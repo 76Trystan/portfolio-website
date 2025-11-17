@@ -17,6 +17,7 @@ This is a personal portfolio website. It showcases projects, skills, and contact
 
 ## Folder Structure
 
+```
 my-project/
 ├── public/
 │   └── index.html
@@ -30,3 +31,4 @@ my-project/
 │   └── index.css
 ├── package.json
 └── README.md
+```
