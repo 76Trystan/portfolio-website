@@ -19,7 +19,7 @@ This is a personal portfolio website. It showcases projects, skills, and contact
 
 my-project/
 ├── public/
-│   ├── index.html
+│   └── index.html
 │   └── favicon.ico
 ├── src/
 │   ├── components/
