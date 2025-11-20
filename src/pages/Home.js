@@ -1,6 +1,8 @@
 
 import Contact from "../components/Contact";
 import About from "../components/About";
+import Skills from "../components/Skills";
+
 
 
 export default function Home() {
@@ -12,15 +14,7 @@ export default function Home() {
       </header>
       <About />
       <section className="section">
-        <h2>Featured Skills</h2>
-        <div className="card-grid">
-          <div className="card">Full-Stack Development</div>
-          <div className="card">Problem Solving & Debugging</div>
-          <div className="card">Software Architecture & System Design</div>
-          <div className="card">Cloud Deployment & DevOps</div>
-          <div className="card">Artificial Intelligence & Machine Learning</div>
-          <div className="card">Leadership & Communication</div>
-        </div>
+        <Skills />
       </section>
       <Contact />
     </div>
