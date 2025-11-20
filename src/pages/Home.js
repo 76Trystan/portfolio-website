@@ -19,6 +19,7 @@ export default function Home() {
           <div className="card">Software Architecture & System Design</div>
           <div className="card">Cloud Deployment & DevOps</div>
           <div className="card">Artificial Intelligence & Machine Learning</div>
+          <div className="card">Leadership & Communication</div>
         </div>
       </section>
       <Contact />
