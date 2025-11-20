@@ -1,6 +1,6 @@
 function About() {
   return (
-    <section id="about">
+    <section className="fade-in" id="about">
       <h2>About Me</h2>
       <p>
         Will add content about myself here soon.
