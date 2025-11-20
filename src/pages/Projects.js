@@ -1,4 +1,5 @@
-import './Projects.css'; 
+import { useState } from "react";
+import './Projects.css';
 
 export default function Projects() {
   const projects = [
@@ -11,23 +12,34 @@ export default function Projects() {
       description: "Smart bridge control system.",
     },
     {
-      title: "Add Third Project",
-      description: "Add third project description.",
+      title: "Third Project",
+      description: "Description for third project.",
     },
   ];
 
-  return (
-    <div className="page">
-      <h1 className="section-title">Projects</h1>
+  const [openIndex, setOpenIndex] = useState(null);
 
+  const toggleCard = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  return (
+    <section className="section projects-section">
+      <h2 className="section-title">Projects</h2>
       <div className="card-grid">
         {projects.map((project, index) => (
-          <div key={index} className="card">
+          <div
+            key={index}
+            className={`card ${openIndex === index ? "card-open" : ""}`}
+            onClick={() => toggleCard(index)}
+          >
             <h3>{project.title}</h3>
-            <p>{project.description}</p>
+            <div className="card-details">
+              {project.description}
+            </div>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
